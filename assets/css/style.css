@@ -1,0 +1,390 @@
+body {
+  background-repeat: no-repeat;
+  font-family: 'Press Start 2P';
+  background-position: center;
+  background-size: cover;
+
+}
+button {
+  padding: 20px;
+  background-color: hotpink;
+  font-family: 'Press Start 2P';
+  font-size: 130%;
+  border-radius: 10px;
+  color: white;
+}
+button:hover {
+transition: transform 500ms;
+transform: scale(1.2);
+}
+
+/* GAME TITLE STYLING BELOW */
+.gameTitleContainer {
+  text-align: center;
+}
+.gameTitleLogo {
+  width: 970px;
+  height: 658px;
+  margin: 0 auto;
+}
+.gameStartButton {
+  margin: 100px;
+}
+
+
+
+
+/* HEALTH TIMER AND HEADER AREA BELOW */
+
+.healthBarZone {
+  text-align: center;
+  font-size: 200%;
+  height: 130px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.enemyLevel1, .enemyLevel2, .enemyLevel3, .ribbon {
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+}
+.enemyLevel1 {
+  background-image: url('../images/characters/aruraune.png');
+}
+.enemyLevel2 {
+  background-image: url('../images/characters/noah.png');
+}
+.enemyLevel3 {
+  background-image: url('../images/characters/shadow-erina.png');
+}
+.enemyHealthBarContainer, .ribiHealthBarContainer {
+ display: inline-block;
+ height: 80px;
+ width: 400px;
+ border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 2px;
+}
+.enemyHealthBarContainer {
+  border: 4px solid green;
+  transform: rotateZ(180deg)
+}
+.enemyHealthBar, .ribiHealthBar {
+  height: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition-duration: 500ms;
+}
+.enemyHealthBar {
+  background-color: red;
+  width: 400px;
+}
+
+.timerContainer {
+  display: inline-block;
+  position: relative;
+  height: 120px;
+  width: 120px;
+  background-image: url('../images/timer-background.png');
+}
+.timer {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+.ribiHealthBarContainer {
+ border: 4px solid red;
+}
+.ribiHealthBar {
+background-color: limegreen;
+width: 400px;
+}
+.ribbon {
+  background-image: url('../images/characters/ribbon.png');
+}
+
+/* SIDE STANCE CHARACTER STYLING BELOW */
+
+.level1EnemySideStance,
+.level2EnemySideStance,
+.level3EnemySideStance,
+.ribiSideStance {
+  position: absolute;
+  height: 720px;
+  width: 450px;
+}
+
+.level1EnemySideStance {
+  background-image: url('../images/characters-side/aruraune.png')
+}
+.level2EnemySideStance {
+  background-image: url('../images/characters-side/noah.png')
+}
+.level3EnemySideStance {
+  background-image: url('../images/characters-side/shadow-erina.png');
+  transition: background 3s linear;
+}
+
+.ribiSideStance {
+  right: 8px;
+  background-image: url('../images/characters-side/ribbon.png')
+}
+
+/*  SCENE DIALOGUE BOX STYLING BELOW */
+
+.conversationContainer {
+  height: 900px;
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.conversationBox {
+  height: 130px;
+  width: 1200px;
+  border: 10px double white;
+  background-color: black;
+  display: table;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* IN-BATTLE DIALOGUE BOX STYLING BELOW */
+
+.dialogueContainer {
+  height: 130px;
+  width: 1200px;
+  margin: 0 auto;
+  border: 10px double white;
+  background-color: black;
+  display: table;
+}
+.dialogueContent {
+  color: white;
+  display: table-cell;
+  width: 1050px;
+  text-align: center;
+  height: 120px;
+  vertical-align: middle;
+
+}
+.dialogueCharacter {
+  background-image: url('../images/characters/cocoa.png');
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 120px;
+  display: table-cell;
+}
+
+/* CHARACTER CARD STYLING BELOW */
+
+.mainContainer {
+  display: flex;
+  margin: 0 auto;
+  height: 700px;
+  width: 800px;
+  text-align: center;
+}
+.cardContainer {
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.stats {
+  display: flex;
+  width: 30%;
+  align-content: center;
+  flex-direction: column;
+  color: white;
+  line-height: 140%;
+  margin: 0 auto;
+}
+.statsDisplay {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: hotpink;
+  font-size: 120%;
+  top: 25%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  height: 120px;
+  width: 120px;
+}
+.aruraune,
+.ashuri,
+.chocolate,
+.cicini,
+.cocoa,
+.erina,
+.irisu,
+.keke,
+.kotri,
+.lilith,
+.miru,
+.nieve,
+.nixie,
+.noah,
+.pandora,
+.rita,
+.rumi,
+.saya,
+.seana,
+.syaro,
+.vanilla
+ {
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+}
+.cardBack,.cardBack1,.cardBack2,.cardBack3 {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+}
+.cardBack:hover, .cardBack1:hover, .cardBack2:hover, .cardBack3:hover  {
+ transition: transform 500ms;
+ /* transform: scale(1.2); */
+ transform: scale(1.4) rotateZ(45deg) ;
+ transform-style: preserve-3d;
+ z-index: 1;
+}
+.cardBack {
+  background-image: url('../images/cardBack.png');
+}
+.cardBack1 {
+  background-image: url('../images/characters/cardBackLevel1.png');
+}
+.cardBack2 {
+  background-image: url('../images/characters/cardBackLevel2.png');
+}
+.cardBack3 {
+  background-image: url('../images/characters/cardBackLevel3.png');
+}
+
+.aruraune {
+  background-image: url('../images/characters/aruraune.png');
+}
+.ashuri {
+  background-image: url('../images/characters/ashuri.png');
+}
+.chocolate {
+  background-image: url('../images/characters/chocolate.png');
+}
+.cicini {
+  background-image: url('../images/characters/cicini.png');
+}
+.cocoa {
+  background-image: url('../images/characters/cocoa.png');
+}
+.erina {
+  background-image: url('../images/characters/erina.png');
+}
+.irisu {
+  background-image: url('../images/characters/irisu.png');
+}
+.keke {
+  background-image: url('../images/characters/keke.png');
+}
+.kotri {
+  background-image: url('../images/characters/kotri.png');
+}
+.lilith {
+  background-image: url('../images/characters/lilith.png');
+}
+.miru {
+  background-image: url('../images/characters/miru.png');
+}
+.nieve {
+  background-image: url('../images/characters/nieve.png');
+}
+.nixie {
+  background-image: url('../images/characters/nixie.png');
+}
+.noah {
+  background-image: url('../images/characters/noah.png');
+}
+.pandora {
+  background-image: url('../images/characters/pandora.png');
+}
+.rita {
+  background-image: url('../images/characters/rita.png');
+}
+.rumi {
+  background-image: url('../images/characters/rumi.png');
+}
+.saya {
+  background-image: url('../images/characters/saya.png');
+}
+.seana {
+  background-image: url('../images/characters/seana.png');
+}
+.syaro {
+  background-image: url('../images/characters/syaro.png');
+}
+.vanilla {
+  background-image: url('../images/characters/vanilla.png');
+}
+
+
+.hidden {
+  display: none;
+}
+.disabled {
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-over-modal {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  border: 10px hotpink double;
+  padding: 100px;
+
+}
+.ribi-loss-pose {
+  background-image: url('../images/ribi-game-over.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 240px;
+  width: 240px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
